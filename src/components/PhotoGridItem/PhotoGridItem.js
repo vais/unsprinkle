@@ -44,12 +44,15 @@ const Image = styled.img`
 `;
 
 const Tags = styled.ul`
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 5px 0;
 `;
 
 const Tag = styled.li`
+  display: inline;
+  margin-right: 8px;
   padding: 4px 8px;
   background: var(--color-gray-300);
   font-size: 0.875rem;
